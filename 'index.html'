@@ -1,0 +1,228 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Imperial Propertiez LLC</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  h1 {
+    color: #ffd700; /* Gold */
+    font-size: 2em;
+  }
+
+  nav a {
+    color: #00ffff; /* Electric blue */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #ffd700; /* Gold on hover */
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  #home {
+    background: linear-gradient(135deg, #000, #111);
+    text-align: center;
+  }
+
+  #home h2 {
+    font-size: 2.5em;
+    color: #00ffff;
+    margin-bottom: 20px;
+  }
+
+  #about {
+    background-color: #111;
+    color: #fff;
+  }
+
+  #services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #222;
+  }
+
+  .service-box {
+    background-color: #222;
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+  }
+
+  .service-box h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+
+  #gallery {
+    background-color: #111;
+  }
+
+  #gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    object-fit: cover;
+  }
+
+  #contact {
+    background-color: #222;
+  }
+
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: none;
+  }
+
+  input[type="submit"] {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #e6b800;
+  }
+
+  footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  /* Sticky header styling */
+  nav {
+    display: flex;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Imperial Propertiez LLC</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+  <h2>Restoring and Building Exceptional Properties</h2>
+  <p>Your trusted partner in foreclosure repairs and construction</p>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>Imperial Propertiez LLC specializes in fixing foreclosed homes for banks, brokers, and real estate investors. We also construct new commercial and residential properties in Harrisburg, PA.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <div class="service-box">
+    <h3>Foreclosure Repairs</h3>
+    <p>We refurbish foreclosed homes to bring them back to market-ready condition, ensuring quality and efficiency.</p>
+  </div>
+  <div class="service-box">
+    <h3>Construction Services</h3>
+    <p>Building new commercial and residential properties tailored to your specifications, from ground-up construction to renovations.</p>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <h2>Our Projects</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 1" />
+    <img src="https://images.unsplash.com/photo-1618394660912-0232aed1c74b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 2" />
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 3" />
+    <img src="https://images.unsplash.com/photo-1598130926234-68c469f764ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project 4" />
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="return false;">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" />
+  </form>
+  <div class="contact-info" style="margin-top:20px; text-align:center;">
+    <p>Address: 7201 Allentown Blvd, Harrisburg, PA 17112</p>
+    <p>Phone: 717-224-4800</p>
+    <p>Email: <a href="mailto:imperialpropllc@gmail.com">imperialpropllc@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2023 Imperial Propertiez LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+```
